@@ -64,8 +64,7 @@ public class TablaHash<E,K> {
             return null;
 
         for (CeldaHash<E,K> celda: tabla[pos])
-            if (celda.getClave().equals(clave))
-                return celda.getDato();
+            if (celda.getClave().equals(clave))return celda.getDato();
 
         return null;
     }
